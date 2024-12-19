@@ -1,0 +1,31 @@
+"""DATABASE DESIGNING"""
+
+
+NOTETYPE
+    - id
+    - name(CharField)
+
+NOTE
+    - id
+    - name(CharField)
+    - description(CharField)
+    - type(Relation, NoteType, Fk)
+    - user(Relation, user, Fk)
+
+USER
+    - id
+    - email
+    - username
+    - password
+
+
+# Relationship type
+
+# One to Many - For eg: A table is related to B table as one to many that means that one A table data can be value of
+  many B table data but one B table data can only have one A table data as a value.
+
+# One to One - For eg: A table is related to B table as one to one that means that one A table data can be value of
+  one B table data also one B table data can only have one A table data as a value.
+
+# Many to Many - For eg: A table is related to B table as may to many that means that one A table data can be value of
+  many B table data but also B table data can only have many A table data as a value.
